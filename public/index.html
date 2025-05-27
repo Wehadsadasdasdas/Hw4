@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>鴨蛋價格查詢</title>
+  <title>鴨蛋價格查詢與輸入</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,18 @@
   <button id="query-button">查詢價格範圍</button>
 
   <div id="info">請選擇日期範圍以查看價格。</div>
+
+  <hr> <h2>手動輸入鴨蛋價格</h2>
+
+  <label for="input-date">日期：</label>
+  <input type="date" id="input-date" name="input-date">
+
+  <label for="input-price">鴨蛋(新蛋)(台南)價格：</label>
+  <input type="number" id="input-price" name="input-price" placeholder="請輸入價格">
+
+  <button id="submit-button">送出價格</button>
+
+  <div id="input-status"></div>
 </div>
 
 <script src="script.js" defer></script>
